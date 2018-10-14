@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity"
+    android:background="@mipmap/solar">
+    
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:id="@+id/logo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/email"
+        android:hint="Email Id"
+        android:layout_below="@id/logo"
+        android:background="@drawable/input"
+        android:layout_margin="5dp"
+        android:paddingLeft="20dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_below="@id/email"
+        android:background="@drawable/input"
+        android:layout_margin="5dp"
+        android:paddingLeft="20dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/confirm"
+        android:hint="Confirm Password"
+        android:layout_below="@id/password"
+        android:background="@drawable/input"
+        android:layout_margin="5dp"
+        android:paddingLeft="20dp"
+        android:maxLines="1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:layout_below="@id/confirm"
+        android:layout_centerHorizontal="true"
+        android:text="signup"
+        android:id="@+id/sign"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>

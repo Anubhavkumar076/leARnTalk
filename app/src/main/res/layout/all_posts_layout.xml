@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/abovelinear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/profile_photo"
+                android:src="@drawable/ic_person_"
+                android:padding="2dp"
+                android:layout_marginLeft="2dp"
+                android:scaleType="centerCrop"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:text="Username"
+                    android:textColor="#000"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/text"
+                       android:text="has been updated a post "
+                       android:textSize="14sp"
+                       android:textColor="#FFB2ACAC"
+                       android:layout_marginLeft="2dp"
+                       android:layout_marginTop="5dp"
+                       android:textStyle="bold"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/Date"
+                       android:text="DATE"
+                       android:textSize="10sp"
+                       android:textColor="#000"
+                       android:layout_marginLeft="2dp"
+                       android:layout_marginTop="5dp"
+                       android:textStyle="bold"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/Time"
+                       android:textSize="10sp"
+                       android:text="Time"
+                       android:textColor="#000"
+                       android:layout_marginLeft="2dp"
+                       android:layout_marginTop="5dp"
+                       android:textStyle="bold"/>
+
+               </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_description"
+            android:text="Post Description"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:id="@+id/user_post"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/abovelinear"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unlike"
+            android:id="@+id/Unlike_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 likes"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/like_Text"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comment"
+            android:id="@+id/comment"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

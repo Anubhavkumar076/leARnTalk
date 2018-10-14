@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SettingActivity"
+    android:background="@mipmap/solar">
+
+    <include
+        android:id="@+id/SettingToolbar"
+        layout="@layout/app_bar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/SettingToolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:id="@+id/SettingProfileImage"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/profile"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SettingStatus"
+                android:layout_below="@id/SettingProfileImage"
+                android:background="@drawable/input"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:padding="30dp"
+                android:text="Profile Status"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/status"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SettingUsername"
+                android:layout_below="@id/SettingStatus"
+                android:background="@drawable/input"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:text="Username"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/profilepic"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SettingUsername"
+                android:id="@+id/SettingFullname"
+                android:background="@drawable/input"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="Profile Name"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/profilepic"
+                android:drawablePadding="5dp"
+                />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SettingFullname"
+                android:id="@+id/SettingCountry"
+                android:background="@drawable/input"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="Country"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/country"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SettingCountry"
+                android:id="@+id/SettingBirthdate"
+                android:background="@drawable/input"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="Date of Birth"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SettingBirthdate"
+                android:id="@+id/SettingGender"
+                android:background="@drawable/input"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="Gender"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/gender"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SettingGender"
+                android:id="@+id/SettingRelationship"
+                android:background="@drawable/input"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="Date of Birth"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/relationship"
+                android:drawablePadding="5dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SettingSubmit"
+                android:background="@drawable/button"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Update"
+                android:layout_below="@+id/SettingRelationship"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

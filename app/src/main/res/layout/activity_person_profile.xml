@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PersonProfileActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Person_Profile_Image"
+                android:layout_width="275dp"
+                android:layout_height="275dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:src="@mipmap/profile" />
+
+            <TextView
+                android:id="@+id/Person_Profile_Fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Person_Profile_Image"
+                android:layout_marginTop="15dp"
+                android:text="Full Name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Person_Profile_Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Person_Profile_Fullname"
+
+
+                android:text="username"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/Person_Profile_Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Person_Profile_Username"
+                android:layout_marginTop="5dp"
+                android:text="Hey! I am using leARn Talk."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/Person_Profile_Country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Person_Profile_Status"
+
+                android:layout_marginTop="35dp"
+                android:text="Country"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/Person_Profile_DateofBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Person_Profile_Country"
+
+
+                android:text="Date of Birth"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+
+
+            <TextView
+                android:id="@+id/Person_Profile_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Person_Profile_DateofBirth"
+
+
+                android:text="Gender"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/Person_Profile_Relationship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Person_Profile_Gender"
+
+
+                android:text="Relationship"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEND FRIEND REQUEST"
+                android:background="#3bc173"
+                android:layout_below="@+id/Person_Profile_Relationship"
+                android:id="@+id/Person_Send_Button"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Person_Send_Button"
+                android:layout_centerHorizontal="true"
+                android:background="#a5e80119"
+                android:text="decline friend request"
+                android:id="@+id/Person_Profile_Decline"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

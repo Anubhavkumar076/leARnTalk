@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChatActivity"
+    android:background="#958fab">
+
+    <include
+        android:id="@+id/chatactivity_actionbar"
+        layout="@layout/app_bar_layout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chatactivity_actionbar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/chatactivity_chatfield"
+        android:layout_above="@id/chatactivity_linear"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+        android:id="@+id/chatactivity_linear">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            android:padding="17dp"
+            android:id="@+id/chatactivity_camera"
+            />
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:padding="17dp"
+            android:id="@+id/chatactivity_edittext"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send"
+            android:padding="17dp"
+            android:id="@+id/chatactivity_message"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

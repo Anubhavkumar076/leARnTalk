@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "688938351972",
+    "firebase_url": "https://learntalk-86e1f.firebaseio.com",
+    "project_id": "learntalk-86e1f",
+    "storage_bucket": "learntalk-86e1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688938351972:android:948d42ef6ed41881",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.learntalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688938351972-q0v958t71vhov3gs4np02jar01qg8c52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.learntalk",
+            "certificate_hash": "22468c5c938d8a6b741722fcde918023ac872d90"
+          }
+        },
+        {
+          "client_id": "688938351972-etisj7c6pb5mpgtngbv962lrutr3culb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXEj1dDSO70pf5stSwmjF-fV7yKE6DWLY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688938351972-etisj7c6pb5mpgtngbv962lrutr3culb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
